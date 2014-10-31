@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+	<bean id="id5" class="collection.Categories" autowire="byName">
+		<property name="name" value="General Books" />
+	</bean>
+	
+	<bean id="bk" class="collection.Book">
+		<property name="bookname" value="The Kids" />
+		<property name="bookprice" value="300" />
+	</bean>
+	
+	<bean id="id4" class="collection.MapBean">
+
+		<property name="data">
+			<map>
+				<entry key="k1">
+					<value>10</value>
+				</entry>
+				<entry key="k2">
+					<value>java4s</value>
+				</entry>
+				<entry key="k3">
+					<value>10.55</value>
+				</entry>
+			</map>
+		</property>
+
+	</bean>
+	<bean id="helloWorld" class="com.tutorialspoint.HelloWorld">
+		<property name="message" value="Hello World!" />
+	</bean>
+	<bean id="id1" class="collection.empBean">
+		<property name="empDetails">
+			<set>
+				<value>senthil</value>
+				<value>saravanan</value>
+				<value>bg</value>
+				<value>praveen</value>
+				<value>mohan</value>
+				<value>prabakar</value>
+			</set>
+		</property>
+	</bean>
+	<bean id="id3" class="collection.empBean">
+		<property name="showDetails" value="empList"></property>
+	</bean>
+	<bean id="id2" class="collection.empBean">
+		<property name="empList">
+			<list>
+				<value>mohan</value>
+				<value>senthil</value>
+				<value>saravanan</value>
+				<value>bg</value>
+				<value>praveen</value>
+				<value>mohan</value>
+				<value>prabakar</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>
