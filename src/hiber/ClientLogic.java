@@ -16,9 +16,9 @@ public class ClientLogic {
         Session session = factory.openSession();
         PojoExample p = new PojoExample();
  
-        p.setStuId(101);
-        p.setStuName("iphone");
-        p.setStuAge(50);
+        p.setStuId(102);
+        p.setStuName("samsung");
+        p.setStuAge(40);
  
         Transaction tx = session.beginTransaction();
         session.save(p); 

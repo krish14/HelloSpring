@@ -3,8 +3,8 @@
 "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
  
-<hibernate-mapping>
-<class name="PojoExample" table="example">
+<hibernate-mapping package="hiber">
+<class name="PojoExample" table="student">
  
 <id name="stuId" column="ID"  >
 <generator class="assigned" />
