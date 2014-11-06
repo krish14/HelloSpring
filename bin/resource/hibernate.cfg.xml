@@ -30,6 +30,7 @@
  
         <mapping resource="sub/Employee.hbm.xml"/>
         <mapping resource="hiber/mapping001.hbm.xml"/>
+        <mapping resource="modelHbm/student.hbm.xml" />
  		
  		 
     </session-factory>

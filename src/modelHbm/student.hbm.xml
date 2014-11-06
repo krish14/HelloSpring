@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="allModel">
+
+    <class name="ModelStudent" table="student">
+       <id name="id" column="ID"><generator class="assigned" /> </id>
+       <version name="v" column="ver" />
+       <property name="name" column="NAME" />
+       <property name="age" column="AGE" />
+     </class>
+           
+</hibernate-mapping>
+   
